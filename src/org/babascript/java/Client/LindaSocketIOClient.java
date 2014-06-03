@@ -23,9 +23,9 @@ public class LindaSocketIOClient {
     Map<String, JSONObject> callbacks;
 
 
-    public LindaSocketIOClient(){
+    public LindaSocketIOClient(String api){
         try {
-            io = new SocketIO("http://localhost:5000/");
+            io = new SocketIO(api);
             io.connect(new IOCallback() {
                 @Override
                 public void onDisconnect() {

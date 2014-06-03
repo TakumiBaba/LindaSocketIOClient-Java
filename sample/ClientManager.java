@@ -22,14 +22,13 @@ public class ClientManager {
                 JSONObject test = new JSONObject();
                 test.put("hoge", "Fuga");
 //                ts.write(test);
-//                ts.write(test);
-                ts.read(test, new LindaCallback() {
-                    @Override
-                    public void callback(JSONArray object) {
-                        System.out.println("read!!!");
-                        System.out.println(object.toString());
-                    }
-                });
+//                ts.read(test, new LindaCallback() {
+//                    @Override
+//                    public void callback(JSONArray object) {
+//                        System.out.println("read!!!");
+//                        System.out.println(object);
+//                    }
+//                });
 //                ts.watch(test, new LindaCallback() {
 //                    @Override
 //                    public void callback(JSONArray object) {
@@ -37,13 +36,15 @@ public class ClientManager {
 //                        System.out.println(object.toString());
 //                    }
 //                });
-//                ts.take(test, new LindaCallback() {
-//                    @Override
-//                    public void callback(JSONArray object) {
-//                        System.out.println("take!!!");
-//                        System.out.println(object.toString());
-//                    }
-//                });
+                ts.take(test, new LindaCallback() {
+                    @Override
+                    public void callback(JSONArray object) {
+                        System.out.println("take!!!");
+                        System.out.println(object.toString());
+                    }
+                });
+//                ts.write(test);
+//                ts.write(test);
 //                ts.take(test, new LindaCallback() {
 //                    @Override
 //                    public void callback(JSONArray object) {
