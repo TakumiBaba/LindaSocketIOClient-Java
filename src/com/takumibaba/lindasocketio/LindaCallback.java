@@ -7,5 +7,5 @@ import org.json.JSONObject;
  * Created by takumi on 2014/01/17.
  */
 public interface LindaCallback {
-    public void callback(JSONArray object);
+    public void call(JSONObject object);
 }

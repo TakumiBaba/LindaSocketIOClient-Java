@@ -7,7 +7,7 @@ public class Sample {
 
     public static void main(String args[]){
         System.out.println("main");
-        ClientManager manager = new ClientManager();
+        ClientSample manager = new ClientSample();
 
     }
 }
