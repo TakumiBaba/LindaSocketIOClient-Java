@@ -1,4 +1,4 @@
-package org.babascript.java.Client;
+package com.takumibaba.lindasocketio;
 
 import org.json.JSONObject;
 
