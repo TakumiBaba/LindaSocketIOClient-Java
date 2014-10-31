@@ -22,7 +22,7 @@ public class LindaSocketIOClient extends Emitter {
 
 
     public LindaSocketIOClient(){
-        this("http://node-linda-base.herokuapp.com/");
+        this("http://linda-server.herokuapp.com");
     }
 
 
